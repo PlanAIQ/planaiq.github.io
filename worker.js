@@ -183,7 +183,7 @@ export default {
     const hdrs   = corsHeaders(env, origin);
 
     /* ── Only handle /api/send-email — pass everything else to static assets ── */
-    if (url.pathname !== 'https://planaiq.infoplanaiq.workers.dev/api/send-email') {
+    if (url.pathname !== '/api/send-email') {
       /* env.ASSETS is the static asset binding provided by Cloudflare when
          "assets" is configured in wrangler.jsonc — serves index.html, style.css etc. */
       if (env.ASSETS) return env.ASSETS.fetch(request);
