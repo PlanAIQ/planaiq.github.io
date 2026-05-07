@@ -1,0 +1,22 @@
+{
+  "name": "Plan AIQ \u2014 Business Intelligence & Analytics",
+  "short_name": "Plan AIQ",
+  "description": "Business intelligence and analytics consulting for manufacturers, retailers, and operators.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F1A2E",
+  "theme_color": "#991818",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
