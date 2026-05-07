@@ -3,8 +3,40 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Plan AIQ — Business Intelligence &amp; Analytics Consulting</title>
-<meta name="description" content="Plan AIQ — Business Intelligence & Analytics Consulting. Built in Michigan, serving organizations nationwide."/>
+
+<!-- ── Primary meta ── -->
+<title>Plan AIQ — Business Intelligence &amp; Analytics Consulting | Michigan</title>
+<meta name="description" content="Plan AIQ delivers practical business intelligence, analytics, and data consulting for manufacturers, retailers, and operators in Michigan and nationwide. Free data audit — results in days, not months."/>
+<meta name="keywords" content="business intelligence consulting, analytics consulting Michigan, data consulting, BI dashboards, operational analytics, manufacturing analytics, retail analytics"/>
+<meta name="author" content="Plan AIQ"/>
+<link rel="canonical" href="https://planaiq.co/"/>
+
+<!-- ── Open Graph (LinkedIn, Slack, Facebook) ── -->
+<meta property="og:type"        content="website"/>
+<meta property="og:url"         content="https://planaiq.co/"/>
+<meta property="og:site_name"   content="Plan AIQ"/>
+<meta property="og:title"       content="Plan AIQ — Business Intelligence &amp; Analytics Consulting"/>
+<meta property="og:description" content="Practical BI and analytics consulting for manufacturers, retailers, and operators. Free data audit — results in days, not months. Michigan-based, serving clients nationwide."/>
+<meta property="og:image"       content="https://planaiq.co/og-image.png"/>
+<meta property="og:image:width"  content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:type"   content="image/png"/>
+<meta property="og:locale"      content="en_US"/>
+
+<!-- ── Twitter / X card ── -->
+<meta name="twitter:card"        content="summary_large_image"/>
+<meta name="twitter:site"        content="@planaiq"/>
+<meta name="twitter:title"       content="Plan AIQ — BI &amp; Analytics Consulting"/>
+<meta name="twitter:description" content="Practical BI and analytics consulting for manufacturers, retailers, and operators. Free data audit — results in days."/>
+<meta name="twitter:image"       content="https://planaiq.co/og-image.png"/>
+
+<!-- ── Favicon ── -->
+<link rel="icon"             href="favicon.ico"                    sizes="any"/>
+<link rel="icon"             href="favicon.svg"                    type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<!-- manifest served via server only -->
+
+<script>function trackEvent(){/* analytics removed */}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
@@ -18,10 +50,12 @@
 }
 </style>
 <!-- Chart.js loaded async/defer so it never blocks first paint -->
+<link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"/>
 <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <!-- DNS prefetch for Unsplash CDN -->
 <link rel="dns-prefetch" href="https://images.unsplash.com"/>
 <link rel="preconnect" href="https://images.unsplash.com"/>
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=90&fit=crop&crop=faces,center&auto=format" fetchpriority="high"/>
 <style>
 /* ═══════════════════════ TOKENS ═══════════════════════ */
 :root{
@@ -1192,7 +1226,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
     </div>
   </div>
   <div class="reveal" style="position:relative;overflow:hidden;border-radius:4px;">
-    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=90&fit=crop&crop=faces,center&auto=format" alt="Plan AIQ team" loading="lazy" decoding="async" onerror="this.style.background='#1C1010';this.src=''" style="width:100%;height:420px;object-fit:cover;object-position:center top;border-radius:4px;display:block;"/>
+    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=90&fit=crop&crop=faces,center&auto=format" alt="Plan AIQ team" loading="eager" fetchpriority="high" decoding="async" onerror="this.style.background='#1C1010';this.src=''" style="width:100%;height:420px;object-fit:cover;object-position:center top;border-radius:4px;display:block;"/>
     <div style="position:absolute;top:28px;right:0;background:var(--teal);color:var(--white);padding:16px 22px;font-family:var(--font-mono);font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;display:flex;flex-direction:column;gap:3px;border-radius:4px 0 0 4px;">
       <span>Built in</span><strong style="font-size:1.6rem;font-family:var(--font-serif);font-weight:400;font-style:italic;">Michigan</strong>
     </div>
@@ -1244,7 +1278,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
   <p class="prose on-dark reveal" style="max-width:560px;margin-top:1rem;">We don't apply generic frameworks. Each engagement is built around the specific data challenges, revenue levers, and operational realities of your industry.</p>
   <div class="ind-hub-grid">
     <div class="ind-hub-card reveal" onclick="showPage('manufacturing')">
-      <div class="ind-hub-img" style="background-image:url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=700&q=85&fit=crop')"></div>
+      <div class="ind-hub-img" data-bg="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=700&q=85&fit=crop" style="background-color:var(--fog-warm)"></div>
       <div class="ind-hub-veil"></div>
       <div class="ind-hub-body">
         <div class="ind-hub-badge">Manufacturing</div>
@@ -1254,7 +1288,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
       </div>
     </div>
     <div class="ind-hub-card reveal" onclick="showPage('retail')">
-      <div class="ind-hub-img" style="background-image:url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&q=85&fit=crop')"></div>
+      <div class="ind-hub-img" data-bg="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&q=85&fit=crop" style="background-color:var(--fog-warm)"></div>
       <div class="ind-hub-veil"></div>
       <div class="ind-hub-body">
         <div class="ind-hub-badge">Retail &amp; E-Commerce</div>
@@ -1264,7 +1298,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
       </div>
     </div>
     <div class="ind-hub-card reveal" onclick="showPage('logistics')">
-      <div class="ind-hub-img" style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=700&q=85&fit=crop')"></div>
+      <div class="ind-hub-img" data-bg="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=700&q=85&fit=crop" style="background-color:var(--fog-warm)"></div>
       <div class="ind-hub-veil"></div>
       <div class="ind-hub-body">
         <div class="ind-hub-badge">Logistics</div>
@@ -1274,7 +1308,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
       </div>
     </div>
     <div class="ind-hub-card reveal" onclick="showPage('technology')">
-      <div class="ind-hub-img" style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=85&fit=crop')"></div>
+      <div class="ind-hub-img" data-bg="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=85&fit=crop" style="background-color:var(--fog-warm)"></div>
       <div class="ind-hub-veil"></div>
       <div class="ind-hub-body">
         <div class="ind-hub-badge">Technology</div>
@@ -1284,7 +1318,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
       </div>
     </div>
     <div class="ind-hub-card reveal" onclick="showPage('construction')">
-      <div class="ind-hub-img" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=85&fit=crop')"></div>
+      <div class="ind-hub-img" data-bg="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=85&fit=crop" style="background-color:var(--fog-warm)"></div>
       <div class="ind-hub-veil"></div>
       <div class="ind-hub-body">
         <div class="ind-hub-badge">Construction</div>
@@ -1294,7 +1328,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
       </div>
     </div>
     <div class="ind-hub-card reveal" onclick="showPage('energy')">
-      <div class="ind-hub-img" style="background-image:url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=700&q=85&fit=crop')"></div>
+      <div class="ind-hub-img" data-bg="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=700&q=85&fit=crop" style="background-color:var(--fog-warm)"></div>
       <div class="ind-hub-veil"></div>
       <div class="ind-hub-body">
         <div class="ind-hub-badge">Energy</div>
@@ -1343,7 +1377,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
       <h3>Let's Talk About Your Business</h3>
       <div class="c-detail"><div class="c-ico">📍</div><div><div class="c-lbl">Location</div><div class="c-val">Michigan · Serving Nationwide</div></div></div>
       <div class="c-detail" id="phone-detail"><div class="c-ico">📞</div><div><div class="c-lbl">Phone <button onclick="togglePhone()" style="background:none;border:none;cursor:pointer;font-size:.6rem;color:rgba(255,255,255,.38);margin-left:6px;padding:0;font-family:var(--font-sans);" id="phone-toggle-btn"></button></div><div class="c-val" id="phone-val">(810) 941-4357</div></div></div>
-      <div class="c-detail"><div class="c-ico">✉️</div><div><div class="c-lbl">Email</div><div class="c-val"><a href="/cdn-cgi/l/email-protection#2c45424a435c404d424d455d6c4b414d4540024f4341135f594e46494f58117c404d420c6d657d0c69425d59455e55" style="color:rgba(255,255,255,.78);"><span class="__cf_email__" data-cfemail="234a4d454c534f424d424a5263444e424a4f0d404c4e">[email&#160;protected]</span></a></div></div></div>
+      <div class="c-detail"><div class="c-ico">✉️</div><div><div class="c-lbl">Email</div><div class="c-val"><a href="mailto:infoplanaiq@gmail.com">infoplanaiq@gmail.com</a></div></div></div>
       <a href="javascript:void(0)" onclick="openMail('Book a Consultation','consultation')" class="btn btn-white">Book a Consultation →</a>
     </div>
   </div>
@@ -1352,7 +1386,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
     <p class="contact-form-tagline">Tell us about your operation — we respond within 12 hours.</p>
     <div class="form">
       <div class="form-row"><input class="fi" id="contact-name" type="text" placeholder="Your Name" autocomplete="name" maxlength="50"/><input class="fi" type="text" placeholder="Company / Organization"/></div>
-      <div class="form-row"><input class="fi" id="contact-email" type="email" placeholder="Email Address"/><input class="fi" type="tel" placeholder="Phone (optional)"/></div>
+      <div class="form-row"><input class="fi" id="contact-email" type="email" placeholder="Email Address"/><input class="fi" id="contact-phone" type="tel" placeholder="Phone (optional)" autocomplete="tel" maxlength="20" inputmode="tel"/></div>
       <select class="fi">
         <option value="" disabled selected>Industry / Type of Business</option>
         <option>Manufacturing</option><option>Retail &amp; E-Commerce</option>
@@ -1402,7 +1436,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
       <div class="footer-col-title">Contact</div>
       <ul class="footer-links">
         <li id="footer-phone" style="transition:opacity .2s"><a href="tel:8109414357" style="color:rgba(255,255,255,.36);" onmouseover="this.style.color='rgba(255,255,255,.82)'" onmouseout="this.style.color='rgba(255,255,255,.36)'">(810) 941-4357</a></li>
-        <li><a href="/cdn-cgi/l/email-protection#e68f888089968a8788878f97a6818b878f8ac885898bd99593848c838592dbb68a8788c6a7afb7c6a38897938f949f" style="color:rgba(255,255,255,.36);" onmouseover="this.style.color='rgba(255,255,255,.82)'" onmouseout="this.style.color='rgba(255,255,255,.36)'"><span class="__cf_email__" data-cfemail="375e595158475b5659565e4677505a565e5b1954585a">[email&#160;protected]</span></a></li>
+        <li><a href="mailto:infoplanaiq@gmail.com">infoplanaiq@gmail.com</a></li>
         <li><a href="javascript:void(0)">Michigan</a></li>
         <li><a href="javascript:void(0)" onclick="openMail('Free Audit Request','')">Start a Free Audit</a></li>
       </ul>
@@ -1445,7 +1479,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
   <div class="services-grid" style="margin-top:56px;">
 
     <div class="svc-card reveal">
-      <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1590650153855-d9e808231d41?w=700&q=80&fit=crop')"></div>
+      <div class="svc-bg" data-bg="https://images.unsplash.com/photo-1590650153855-d9e808231d41?w=700&q=80&fit=crop" style="background-color:var(--fog-warm)"></div>
       <div class="svc-veil"></div>
       <div class="svc-body">
         <div class="svc-icon-ring"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
@@ -1458,7 +1492,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
     </div>
 
     <div class="svc-card reveal">
-      <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80&fit=crop')"></div>
+      <div class="svc-bg" data-bg="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80&fit=crop" style="background-color:var(--fog-warm)"></div>
       <div class="svc-veil"></div>
       <div class="svc-body">
         <div class="svc-icon-ring"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
@@ -1471,7 +1505,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
     </div>
 
     <div class="svc-card reveal">
-      <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=700&q=80&fit=crop')"></div>
+      <div class="svc-bg" data-bg="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=700&q=80&fit=crop"></div>
       <div class="svc-veil"></div>
       <div class="svc-body">
         <div class="svc-icon-ring"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
@@ -1484,7 +1518,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
     </div>
 
     <div class="svc-card reveal">
-      <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=700&q=80&fit=crop')"></div>
+      <div class="svc-bg" data-bg="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=700&q=80&fit=crop"></div>
       <div class="svc-veil"></div>
       <div class="svc-body">
         <div class="svc-icon-ring"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
@@ -1497,7 +1531,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
     </div>
 
     <div class="svc-card reveal">
-      <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700&q=80&fit=crop')"></div>
+      <div class="svc-bg" data-bg="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700&q=80&fit=crop"></div>
       <div class="svc-veil"></div>
       <div class="svc-body">
         <div class="svc-icon-ring"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
@@ -1510,7 +1544,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
     </div>
 
     <div class="svc-card reveal">
-      <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=700&q=80&fit=crop')"></div>
+      <div class="svc-bg" data-bg="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=700&q=80&fit=crop"></div>
       <div class="svc-veil"></div>
       <div class="svc-body">
         <div class="svc-icon-ring"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
@@ -1523,7 +1557,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
     </div>
 
     <div class="svc-card reveal">
-      <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&q=80&fit=crop')"></div>
+      <div class="svc-bg" data-bg="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&q=80&fit=crop"></div>
       <div class="svc-veil"></div>
       <div class="svc-body">
         <div class="svc-icon-ring"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
@@ -1536,7 +1570,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
     </div>
 
     <div class="svc-card amber-hover reveal">
-      <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=80&fit=crop')"></div>
+      <div class="svc-bg" data-bg="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=80&fit=crop"></div>
       <div class="svc-veil"></div>
       <div class="svc-body">
         <div class="svc-icon-ring"><svg viewBox="0 0 24 24"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg></div>
@@ -1549,7 +1583,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
     </div>
 
     <div class="svc-card amber-hover reveal">
-      <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=700&q=80&fit=crop')"></div>
+      <div class="svc-bg" data-bg="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=700&q=80&fit=crop"></div>
       <div class="svc-veil"></div>
       <div class="svc-body">
         <div class="svc-icon-ring"><svg viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg></div>
@@ -1562,7 +1596,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
     </div>
 
     <div class="svc-card amber-hover reveal">
-      <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=700&q=80&fit=crop')"></div>
+      <div class="svc-bg" data-bg="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=700&q=80&fit=crop"></div>
       <div class="svc-veil"></div>
       <div class="svc-body">
         <div class="svc-icon-ring"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
@@ -1575,7 +1609,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
     </div>
 
     <div class="svc-card amber-hover reveal">
-      <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=700&q=80&fit=crop')"></div>
+      <div class="svc-bg" data-bg="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=700&q=80&fit=crop"></div>
       <div class="svc-veil"></div>
       <div class="svc-body">
         <div class="svc-icon-ring"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
@@ -1588,7 +1622,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
     </div>
 
     <div class="svc-card amber-hover reveal">
-      <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=700&q=80&fit=crop')"></div>
+      <div class="svc-bg" data-bg="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=700&q=80&fit=crop"></div>
       <div class="svc-veil"></div>
       <div class="svc-body">
         <div class="svc-icon-ring"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
@@ -1601,7 +1635,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
     </div>
 
     <div class="svc-card amber-hover reveal">
-      <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=700&q=80&fit=crop')"></div>
+      <div class="svc-bg" data-bg="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=700&q=80&fit=crop"></div>
       <div class="svc-veil"></div>
       <div class="svc-body">
         <div class="svc-icon-ring"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
@@ -1667,7 +1701,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
       <div class="footer-col-title">Contact</div>
       <ul class="footer-links">
         <li id="footer-phone" style="transition:opacity .2s"><a href="tel:8109414357" style="color:rgba(255,255,255,.36);" onmouseover="this.style.color='rgba(255,255,255,.82)'" onmouseout="this.style.color='rgba(255,255,255,.36)'">(810) 941-4357</a></li>
-        <li><a href="/cdn-cgi/l/email-protection#036a6d656c736f626d626a7243646e626a6f2d606c6e3c707661696660773e536f626d23424a5223466d72766a717a" style="color:rgba(255,255,255,.36);" onmouseover="this.style.color='rgba(255,255,255,.82)'" onmouseout="this.style.color='rgba(255,255,255,.36)'"><span class="__cf_email__" data-cfemail="e28b8c848d928e838c838b93a2858f838b8ecc818d8f">[email&#160;protected]</span></a></li>
+        <li><a href="mailto:infoplanaiq@gmail.com">infoplanaiq@gmail.com</a></li>
         <li><a href="javascript:void(0)">Michigan</a></li>
       </ul>
     </div>
@@ -1823,7 +1857,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
       <div class="footer-col-title">Contact</div>
       <ul class="footer-links">
         <li id="footer-phone" style="transition:opacity .2s"><a href="tel:8109414357" style="color:rgba(255,255,255,.36);" onmouseover="this.style.color='rgba(255,255,255,.82)'" onmouseout="this.style.color='rgba(255,255,255,.36)'">(810) 941-4357</a></li>
-        <li><a href="/cdn-cgi/l/email-protection#7f161119100f131e111e160e3f18121e1613511c1012400c0a1d151a1c0b422f131e115f3e362e5f3a110e0a160d06" style="color:rgba(255,255,255,.36);" onmouseover="this.style.color='rgba(255,255,255,.82)'" onmouseout="this.style.color='rgba(255,255,255,.36)'"><span class="__cf_email__" data-cfemail="8ae3e4ece5fae6ebe4ebe3fbcaede7ebe3e6a4e9e5e7">[email&#160;protected]</span></a></li>
+        <li><a href="mailto:infoplanaiq@gmail.com">infoplanaiq@gmail.com</a></li>
         <li><a href="javascript:void(0)">Michigan</a></li>
       </ul>
     </div>
@@ -1836,7 +1870,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900;
 </div><!-- end page-social-proof -->
 
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 /* ─── Industry data ─── */
 /* ─── Industry data ─── */
 const INDUSTRIES = {
@@ -2069,15 +2103,28 @@ function buildIndustryPage(key) {
             </div>
           </div>
         </div>
-        <div class="roi-results">
-          <div class="roi-result-card">
-            <div class="roi-result-label">Estimated recoverable value per year</div>
-            <div class="roi-result-val" id="${roiId}_total">—</div>
-            <div class="roi-result-range" id="${roiId}_range"></div>
+        <div class="roi-results-wrap">
+          <div class="roi-results">
+            <div class="roi-result-card">
+              <div class="roi-result-label">Estimated recoverable value per year</div>
+              <div class="roi-result-val" id="${roiId}_total">—</div>
+              <div class="roi-result-range" id="${roiId}_range"></div>
+            </div>
+            <div class="roi-breakdown" id="${roiId}_breakdown"></div>
+            <p class="roi-disclaimer">Estimates are based on industry-average recovery rates from published research. Actual results depend on your specific operation. A Plan AIQ audit will give you a precise, costed figure.</p>
+            <a href="javascript:void(0)" onclick="openMail('ROI Audit Request — ${d.title}','')" class="btn btn-primary" style="margin-top:1.2rem;display:inline-flex;align-items:center;gap:8px;">Verify My Number With a Free Audit ${svgArr}</a>
           </div>
-          <div class="roi-breakdown" id="${roiId}_breakdown"></div>
-          <p class="roi-disclaimer">Estimates are based on industry-average recovery rates from published research. Actual results depend on your specific operation. A Plan AIQ audit will give you a precise, costed figure.</p>
-          <a href="javascript:void(0)" onclick="openMail('ROI Audit Request — ${d.title}','')" class="btn btn-primary" style="margin-top:1.2rem;display:inline-flex;align-items:center;gap:8px;">Verify My Number With a Free Audit ${svgArr}</a>
+          <div class="roi-gate-overlay" id="${roiId}_gate">
+            <div class="roi-gate-icon">📊</div>
+            <div class="roi-gate-title">Your estimate is ready</div>
+            <div class="roi-gate-sub">Enter your work email to see your personalised ROI figure and breakdown.</div>
+            <div class="roi-gate-form">
+              <input class="roi-gate-input" type="email" id="${roiId}_gate_email" placeholder="you@company.com" autocomplete="email" inputmode="email"/>
+              <div class="roi-gate-err" id="${roiId}_gate_err">Please enter a valid email address.</div>
+              <button class="roi-gate-btn" onclick="unlockRoi('${roiId}')">See My ROI →</button>
+            </div>
+            <p class="roi-gate-privacy">No spam. Used only to send your free audit summary.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -2461,6 +2508,17 @@ function validateName(val) {
   return null;
 }
 
+/* -- Phone validation (optional field) -- */
+function validatePhone(val) {
+  val = (val || '').trim();
+  if (!val) return null;
+  var digits = val.replace(/[\s().\-+]/g, '');
+  if (/[^0-9]/.test(digits)) return 'Phone may only contain digits, spaces, +, - and parentheses.';
+  if (digits.length < 7)  return 'Phone number is too short (minimum 7 digits).';
+  if (digits.length > 15) return 'Phone number is too long (maximum 15 digits).';
+  return null;
+}
+
 function setFieldError(el, msg) {
   if (!el) return;
   el.classList.add('fi--error');
@@ -2591,12 +2649,14 @@ function submitAuditModal() {
   if (nameErr2) { setFieldError(nameEl, nameErr2); auditValid = false; }
 
   if (!email) {
-    setFieldError(emailEl, 'Your email address is required.');
-    auditValid = false;
+    setFieldError(emailEl, 'Your email address is required.'); auditValid = false;
   } else if (!emailRe2.test(email)) {
-    setFieldError(emailEl, 'Please enter a valid email address (e.g. you@company.com).');
-    auditValid = false;
+    setFieldError(emailEl, 'Please enter a valid email address (e.g. you@company.com).'); auditValid = false;
   }
+
+  var phoneErr2 = validatePhone(phone);
+  if (phoneErr2) { setFieldError(phoneEl, phoneErr2); auditValid = false; }
+
   if (!auditValid) return;
 
   var btn = m.querySelector('#audit-submit-btn');
@@ -2604,6 +2664,10 @@ function submitAuditModal() {
   sendEmail(ftype, {
     name: name, email: email, phone: phone, company: company, message: msg
   }, function() {
+    [nameEl, emailEl, phoneEl, companyEl, msgEl].forEach(function(el) {
+      if (el) el.value = '';
+    });
+    clearAllFieldErrors(m.querySelector('.audit-modal-body'));
     closeAuditModal();
     showThankYou();
   }, function(err) {
@@ -2614,6 +2678,7 @@ function submitAuditModal() {
 
 /* ─── openMail: opens the modal with correct formType ─── */
 function openMail(subject, formType) {
+  trackEvent('cta_click', { label: formType || 'general', source: 'modal_open' });
   openAuditModal(subject, formType || 'audit');
 }
 
@@ -2631,32 +2696,31 @@ function submitContactForm() {
   var svgBtn   = ' <svg viewBox="0 0 14 14" fill="none" style="width:13px;height:13px;"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-  var nameEl  = document.getElementById('contact-name');
-  var emailEl = document.getElementById('contact-email');
-  var msgEl2  = document.getElementById('contact-message');
+  var nameEl   = document.getElementById('contact-name');
+  var emailEl  = document.getElementById('contact-email');
+  var phoneEl2 = document.getElementById('contact-phone');
+  var msgEl2   = document.getElementById('contact-message');
   var formScope = document.querySelector('.form').parentElement;
   var valid = true;
 
   clearAllFieldErrors(formScope);
 
   var nameErr = validateName(name);
-  if (nameErr) {
-    setFieldError(nameEl, nameErr);
-    valid = false;
-  }
+  if (nameErr) { setFieldError(nameEl, nameErr); valid = false; }
+
   if (!email) {
-    setFieldError(emailEl, 'Your email address is required.');
-    valid = false;
+    setFieldError(emailEl, 'Your email address is required.'); valid = false;
   } else if (!emailRegex.test(email)) {
-    setFieldError(emailEl, 'Please enter a valid email address (e.g. you@company.com).');
-    valid = false;
+    setFieldError(emailEl, 'Please enter a valid email address (e.g. you@company.com).'); valid = false;
   }
+
+  var phoneErr = validatePhone(phone);
+  if (phoneErr) { setFieldError(phoneEl2, phoneErr); valid = false; }
+
   if (!message) {
-    setFieldError(msgEl2, 'Please describe your challenge — this field is required.');
-    valid = false;
+    setFieldError(msgEl2, 'Please describe your challenge — this field is required.'); valid = false;
   } else if (message.length > 10000) {
-    setFieldError(msgEl2, 'Your message exceeds the 10,000 character limit. Please shorten it.');
-    valid = false;
+    setFieldError(msgEl2, 'Your message exceeds the 10,000 character limit. Please shorten it.'); valid = false;
   }
   if (!valid) return;
 
@@ -2665,6 +2729,11 @@ function submitContactForm() {
   sendEmail('contact', {
     name: name, email: email, phone: phone, company: company, industry: industry, message: message
   }, function() {
+    document.querySelectorAll('.form .fi').forEach(function(el) {
+      if (el.tagName === 'SELECT') el.selectedIndex = 0; else el.value = '';
+    });
+    clearAllFieldErrors(formScope);
+    if (btn) { btn.disabled = false; btn.innerHTML = 'Send Message <svg viewBox="0 0 14 14" fill="none" style="width:13px;height:13px;margin-left:6px;"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'; }
     showThankYou();
   }, function(err) {
     var msg = (err && err.message) ? err.message : 'Something went wrong — please email us directly at infoplanaiq@gmail.com';
@@ -2762,6 +2831,25 @@ window.addEventListener('DOMContentLoaded', function() {
       if (emailRe.test(this.value.trim())) clearFieldError(this);
     });
   }
+
+  /* -- Phone blur/input wiring (both forms) -- */
+  [document.getElementById('contact-phone'), document.getElementById('audit-phone')].forEach(function(el) {
+    if (!el) return;
+    el.addEventListener('input', function() {
+      var raw = this.value;
+      var cleaned = raw.replace(/[^0-9\s().\-+]/g, '');
+      if (cleaned !== raw) {
+        var pos = this.selectionStart - (raw.length - cleaned.length);
+        this.value = cleaned;
+        try { this.setSelectionRange(Math.max(0,pos), Math.max(0,pos)); } catch(e){}
+      }
+      if (!validatePhone(this.value)) clearFieldError(this);
+    });
+    el.addEventListener('blur', function() {
+      var err = validatePhone(this.value);
+      if (err) setFieldError(this, err); else clearFieldError(this);
+    });
+  });
 });
 
 /* ─── Success popup (contact form) ─── */
@@ -2846,7 +2934,7 @@ function closeSuccessPopup() {
       </div>
       <div class="audit-form-row">
         <input class="audit-fi" type="email" id="audit-email" placeholder="Email Address *" autocomplete="email"/>
-        <input class="audit-fi" type="tel" id="audit-phone" placeholder="Phone (optional)" autocomplete="tel"/>
+        <input class="audit-fi" type="tel" id="audit-phone" placeholder="Phone (optional)" autocomplete="tel" maxlength="20" inputmode="tel"/>
       </div>
       <textarea class="audit-fi" id="audit-message" rows="4" placeholder="Describe your biggest operational or data challenge…" maxlength="10000"></textarea>
       <button class="audit-submit-btn" id="audit-submit-btn" onclick="submitAuditModal()">
@@ -2921,6 +3009,51 @@ textarea.audit-fi{resize:vertical;min-height:96px;}
   margin-top:4px;
 }
 .audit-submit-btn:hover{background:var(--teal-mid);transform:translateY(-1px);box-shadow:0 8px 24px rgba(153,24,24,.3);}
+
+/* ── ROI lead-capture gate ── */
+.roi-results-wrap { position: relative; }
+.roi-gate-overlay {
+  position: absolute; inset: 0;
+  background: rgba(244,246,250,.92);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 12px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 28px 24px; text-align: center;
+  z-index: 10;
+  transition: opacity .35s ease;
+}
+.roi-gate-overlay.hidden { opacity: 0; pointer-events: none; }
+.roi-gate-icon { font-size: 2rem; margin-bottom: 10px; line-height: 1; }
+.roi-gate-title {
+  font-family: var(--font-serif); font-size: 1.1rem;
+  font-weight: 600; color: var(--ink); margin-bottom: 6px;
+}
+.roi-gate-sub {
+  font-size: .82rem; color: var(--ink-45); line-height: 1.55;
+  margin-bottom: 18px; max-width: 280px;
+}
+.roi-gate-form { display: flex; flex-direction: column; gap: 8px; width: 100%; max-width: 300px; }
+.roi-gate-input {
+  padding: 11px 14px; border: 1.5px solid var(--rule);
+  border-radius: 7px; font-family: var(--font-sans);
+  font-size: .88rem; color: var(--ink); outline: none;
+  transition: border-color .18s;
+}
+.roi-gate-input:focus { border-color: var(--teal); }
+.roi-gate-input.err { border-color: #dc2626; }
+.roi-gate-err { font-size: .74rem; color: #dc2626; display: none; text-align: left; }
+.roi-gate-err.show { display: block; }
+.roi-gate-btn {
+  padding: 12px 20px; background: var(--teal); color: var(--white);
+  border: none; border-radius: 7px; font-family: var(--font-sans);
+  font-size: .84rem; font-weight: 700; cursor: pointer;
+  transition: background .2s, transform .15s;
+}
+.roi-gate-btn:hover { background: var(--teal-mid); transform: translateY(-1px); }
+.roi-gate-privacy { font-size: .7rem; color: var(--ink-45); margin-top: 6px; }
+
 .audit-submit-btn:disabled{opacity:.6;cursor:not-allowed
 }
 .audit-privacy{font-size:.76rem;color:var(--ink-45);text-align:center;margin-top:12px;line-height:1.5;}
@@ -3063,6 +3196,76 @@ textarea.audit-fi{resize:vertical;min-height:96px;}
   font-size:.67rem;color:rgba(255,255,255,.16);letter-spacing:.14em;text-transform:uppercase;
 }
 
+
+/* ===== MOBILE UX ENHANCEMENTS ===== */
+@media(max-width:720px){
+  /* iOS auto-zoom prevention: all inputs must be 16px+ */
+  .fi,.fi::placeholder,textarea.fi,select.fi,
+  .audit-fi,.audit-fi::placeholder,textarea.audit-fi{font-size:16px!important;}
+
+  /* Minimum 48px touch targets */
+  .fi:not(textarea):not(select){min-height:48px;padding:12px 14px;}
+  select.fi{min-height:48px;padding:12px 14px;}
+  .audit-fi:not(textarea){min-height:48px;padding:12px 14px;}
+  .form-submit,.audit-submit-btn{min-height:48px;}
+  .btn{min-height:44px;}
+  .nav-hamburger{min-width:44px;min-height:44px;padding:10px;}
+
+  /* Audit modal: bottom sheet on mobile */
+  .audit-modal-overlay{align-items:flex-end;}
+  .audit-modal-box{
+    width:100%;max-width:100%;
+    border-radius:20px 20px 0 0;
+    max-height:92vh;overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
+    padding:28px 20px max(36px,env(safe-area-inset-bottom));
+  }
+  .audit-form-row{grid-template-columns:1fr;}
+
+  /* Contact form */
+  .contact-form-panel{padding:40px 5%;}
+  .form-row{gap:0;}
+
+  /* Hero legibility */
+  .hero-left{padding:56px 5% 44px;}
+  .hero-h1{font-size:clamp(1.9rem,7.5vw,2.8rem);}
+  .hero-body{font-size:.96rem;}
+  .hero-actions{gap:.75rem;}
+
+  /* Thank-you overlay */
+  .ty-overlay{align-items:flex-start;padding:16px;}
+  .ty-card{padding:36px 20px 32px;margin:20px 0 40px;}
+  .ty-steps{grid-template-columns:1fr;gap:8px;}
+
+  /* Footer: extra bottom padding for sticky bar */
+  footer{padding:48px 5% 100px;}
+
+  /* Error messages readable on small screens */
+  .fi-err-msg,.audit-fi-err-msg{font-size:.8rem;}
+}
+
+/* Sticky mobile CTA bar */
+@media(max-width:720px){
+  .mobile-cta-bar{
+    display:flex;
+    position:fixed;bottom:0;left:0;right:0;z-index:800;
+    background:var(--white);border-top:1px solid var(--rule);
+    padding:10px 16px max(12px,env(safe-area-inset-bottom));
+    gap:10px;box-shadow:0 -4px 20px rgba(15,26,46,.10);
+  }
+  .mcta-btn{
+    flex:1;min-height:46px;border:none;border-radius:8px;
+    font-family:var(--font-sans);font-size:.82rem;font-weight:700;
+    letter-spacing:.04em;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;gap:6px;
+    transition:opacity .15s;-webkit-tap-highlight-color:transparent;
+  }
+  .mcta-btn:active{opacity:.8;}
+  .mcta-primary{background:var(--teal);color:var(--white);}
+  .mcta-secondary{background:var(--fog);color:var(--ink);border:1px solid var(--rule);}
+}
+@media(min-width:721px){.mobile-cta-bar{display:none!important;}}
+
 @media(max-width:560px){
   .ty-card{padding:36px 24px 32px;}
   .ty-steps{grid-template-columns:1fr;gap:8px;}
@@ -3071,10 +3274,113 @@ textarea.audit-fi{resize:vertical;min-height:96px;}
 </style>
 
 <script>
+
+/* ── ROI Lead-Capture Gate ── */
+var _roiGateInteracted = {}; // track which calculators have been touched
+
+/* Enter key on ROI gate email input */
+document.addEventListener('keydown', function(e) {
+  if (e.key !== 'Enter') return;
+  if (!e.target.classList.contains('roi-gate-input')) return;
+  var gateId = e.target.id.replace('_gate_email', '');
+  unlockRoi(gateId);
+});
+
+function _roiGateCheck(baseId, gateId) {
+  // If already unlocked this session, skip
+  if (sessionStorage.getItem('roi_unlocked_' + gateId)) return;
+  if (_roiGateInteracted[gateId]) return; // already showing gate
+  _roiGateInteracted[gateId] = true;
+  // Show the gate after a short delay so user sees the blurred result first
+  setTimeout(function() {
+    var gate = document.getElementById(gateId + '_gate');
+    if (gate) gate.classList.remove('hidden');
+  }, 1800);
+}
+
+function unlockRoi(gateId) {
+  var emailEl = document.getElementById(gateId + '_gate_email');
+  var errEl   = document.getElementById(gateId + '_gate_err');
+  if (!emailEl) return;
+  var emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  var val = emailEl.value.trim();
+  if (!emailRe.test(val)) {
+    emailEl.classList.add('err');
+    if (errEl) errEl.classList.add('show');
+    return;
+  }
+  emailEl.classList.remove('err');
+  if (errEl) errEl.classList.remove('show');
+  // Store unlock
+  sessionStorage.setItem('roi_unlocked_' + gateId, '1');
+  // Hide gate
+  var gate = document.getElementById(gateId + '_gate');
+  if (gate) { gate.style.opacity = '0'; setTimeout(function() { gate.style.display = 'none'; }, 350); }
+  // Fire GA4 event with email captured
+  trackEvent('roi_gate_unlock', { gate_id: gateId, email: val });
+  // Optionally send to your worker so you capture the lead
+  fetch('/api/send-email', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ formType: 'roi_lead', name: 'ROI Calculator Lead', email: val, message: 'Unlocked ROI calculator: ' + gateId })
+  }).catch(function(){});
+}
+
+// Patch calcRoi to trigger gate after first interaction
+var _origCalcRoi = calcRoi;
+calcRoi = function(id) {
+  _origCalcRoi(id);
+  _roiGateCheck(id, id);
+};
+
+var _origCalcRts = calcRts;
+calcRts = function(id) {
+  _origCalcRts(id);
+  _roiGateCheck(id, id + '_rts');
+};
+
+// On page load: hide gate if already unlocked
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.roi-gate-overlay').forEach(function(gate) {
+    var gid = gate.id.replace('_gate', '');
+    if (sessionStorage.getItem('roi_unlocked_' + gid)) {
+      gate.style.display = 'none';
+    } else {
+      gate.classList.add('hidden'); // start hidden until first interaction
+    }
+  });
+});
+
+
+/* ── Lazy-load CSS background images (data-bg attribute) ── */
+(function() {
+  if (!('IntersectionObserver' in window)) {
+    // Fallback: load all immediately
+    document.querySelectorAll('[data-bg]').forEach(function(el) {
+      el.style.backgroundImage = 'url(' + el.dataset.bg + ')';
+    });
+    return;
+  }
+  var bgObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var el = entry.target;
+        el.style.backgroundImage = "url('" + el.dataset.bg + "')";
+        bgObs.unobserve(el);
+      }
+    });
+  }, { rootMargin: '200px 0px' }); // pre-load 200px before entering viewport
+
+  document.querySelectorAll('[data-bg]').forEach(function(el) {
+    bgObs.observe(el);
+  });
+})();
+
 /* ─── Thank You overlay ─── */
 function showThankYou() {
   var el = document.getElementById('thankyou-page');
   if (!el) return;
+  trackEvent('form_submit', { form_type: 'contact', status: 'success' });
   el.classList.add('open');
   document.body.style.overflow = 'hidden';
   window.scrollTo(0, 0);
@@ -3110,5 +3416,17 @@ window.addEventListener('popstate', function(e) {
 });
 </script>
 
+
+<!-- Sticky mobile CTA bar -->
+<div class="mobile-cta-bar" aria-label="Quick actions">
+  <button class="mcta-btn mcta-secondary" onclick="showPage('contact');setTimeout(function(){var el=document.getElementById('contact-name');if(el)el.focus();},300)">
+    <svg viewBox="0 0 16 16" fill="none" style="width:14px;height:14px;flex-shrink:0"><rect x="2" y="3" width="12" height="10" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M2 6l6 4 6-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+    Contact
+  </button>
+  <button class="mcta-btn mcta-primary" onclick="openMail('Free Audit Request','audit')">
+    <svg viewBox="0 0 16 16" fill="none" style="width:14px;height:14px;flex-shrink:0"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    Free Audit
+  </button>
+</div>
 </body>
 </html>
